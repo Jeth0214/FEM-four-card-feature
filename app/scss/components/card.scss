@@ -1,0 +1,48 @@
+@use '../utilities/' as *;
+
+.card {
+    width: 100%;
+    padding: rem(28);
+    border-radius: rem(5);
+    overflow: hidden;
+    line-height: rem(30);
+    background-color: var(--clr-white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @include breakpoint('medium') {
+        width: rem(350);
+    }
+    &__logo {
+        margin-top: rem(33);
+        display: block;
+        margin-left: auto;
+    }
+
+    &--supervisor {
+        border-top: 5px solid var(--clr-cyan);
+        @include breakpoint('large'){
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+        }
+    }
+    &--builder {
+        border-top: 5px solid var(--clr-red);
+        @include breakpoint('large'){
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+        }
+    }
+    &--karma {
+        border-top: 5px solid var(--clr-orange);
+        @include breakpoint('large'){
+            grid-column: 2 / 3;
+            grid-row: 3 / 5;
+        }
+    }
+    &--calculator {
+        border-top: 5px solid var(--clr-blue);
+        @include breakpoint('large'){
+            grid-column: 3 / 4;
+            grid-row: 2 / 4;
+        }
+    }
+}

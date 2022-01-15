@@ -1,0 +1,22 @@
+@use '../utilities/' as *;
+
+.intro {
+    text-align: center;
+    max-width: rem(540);
+    margin: 0 auto rem(64);
+    .intro__header {
+        font-weight: var(--fw-light);
+        font-size: clamp(rem(24), 5vw + 1rem, rem(36));
+        margin-bottom: rem(16);
+        &--bold {
+            font-weight: var(--fw-bold);
+        }
+    }
+    .intro__description {
+        padding: 0 rem(10);
+    }
+}
+
+p {
+    opacity: 0.5;
+}
