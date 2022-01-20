@@ -3,17 +3,20 @@
 
 .card {
     width: 100%;
-    padding: rem(28);
+    padding: rem(32);
     border-radius: rem(5);
     overflow: hidden;
     line-height: rem(23);
     background-color: var(--clr-white);
-    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 25%);
+    box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 10%), -4px 4px 8px 0 rgb(0 0 0 / 10%);
     @include breakpoint('medium') {
         width: rem(350);
     }
     &__title {
-        margin-bottom: rem(6);
+        margin-bottom: rem(16);
+    }
+    &__description {
+        font-size: rem(13);
     }
     &__logo {
         margin-top: rem(33);
