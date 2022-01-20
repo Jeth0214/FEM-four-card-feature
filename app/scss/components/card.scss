@@ -8,7 +8,7 @@
     overflow: hidden;
     line-height: rem(23);
     background-color: var(--clr-white);
-    box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 10%), -4px 4px 8px 0 rgb(0 0 0 / 10%);
+    box-shadow:  4px 8px 10px 0 rgb(0 0 0 / 3%), -4px 8px 10px 0 rgb(0 0 0 / 3%);
     @include breakpoint('medium') {
         width: rem(350);
     }
@@ -19,7 +19,7 @@
         font-size: rem(13);
     }
     &__logo {
-        margin-top: rem(33);
+        margin-top: rem(40);
         display: block;
         margin-left: auto;
     }
